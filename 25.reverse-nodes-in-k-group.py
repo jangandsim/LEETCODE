@@ -19,6 +19,16 @@ class Solution(object):
         """
         temp = ListNode()
         temp.next = head
-        return temp.next
+        prev = temp
+
+        while True:
+            i = 0
+            test = prev.next
+            while i < k:
+                if not test:
+                    return temp.next
+            i = 0
+            while i < k:
+                
 # @lc code=end
 
